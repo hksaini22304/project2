@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>Supernatural Cosmetics</title>
+      <link href="styles.css" rel="stylesheet"/>
+   </head>
+   <body>
+      <!-- Header Section -->
+     <header>
+  <nav class="navbar">
+    <a href="#home" class="logo" aria-label="Supernatural Cosmetics home">
+      <img src="images/supernatural-logo.png" alt="Supernatural Cosmetics">
+      <span class="sr-only">Supernatural Cosmetics</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <section class="home-section" id="home"></section>
+      <a href="#home"></a>
+      <!-- Main Content -->
+      <main>
+         <!-- Hero Slideshow Section -->
+         <section class="hero-section">
+            <div class="hero-slideshow">
+               <!-- Hero Slide 1 -->
+               <div class="hero-slide active">
+                  <div class="hero-image-placeholder">
+                     <img alt="Hero Image 1" src="images/hero/ouai.jpg"/>
+                  </div>
+               </div>
+               <!-- Hero Slide 2 -->
+               <div class="hero-slide">
+                  <div class="hero-image-placeholder">
+                     <img alt="Hero Image 2" src="images/hero/eyeshadow.png"/>
+                  </div>
+               </div>
+               <!-- Hero Slide 3 -->
+               <div class="hero-slide">
+                  <div class="hero-image-placeholder">
+                     <img alt="Hero Image 3" src="images/hero/gisou.png"/>
+                  </div>
+               </div>
+               <!-- Hero Slide 4 -->
+               <div class="hero-slide">
+                  <div class="hero-image-placeholder">
+                     <img alt="Hero Image 4" src="images/hero/melanin.png"/>
+                  </div>
+               </div>
+               <!-- Hero Navigation Controls -->
+               <button class="hero-prev" id="heroPrev">❮</button>
+               <button class="hero-next" id="heroNext">❯</button>
+               <!-- Hero Caption -->
+               <div class="hero-caption" id="heroCaption">
+                  <h2>New Collection Arrivals</h2>
+                  <p>Discover our latest beauty essentials</p>
+               </div>
+               <!-- Hero Indicators -->
+               <div class="hero-indicators" id="heroIndicators"></div>
+            </div>
+         </section>
+         <!-- Shop Section -->
+         <section class="shop-section" id="shop"></section>
+         <a href="#shop"></a>
+         <!-- Product Listings Section -->
+         <section class="products-section" data-density="cozy">
+            <h2 class="section-title">Shop</h2>
+            <div class="products-toolbar">
+               <div class="toolbar-left"><span class="product-count" id="productCount"></span></div>
+               <div class="toolbar-right">
+                  <div aria-label="Change card size" class="density-toggle" role="group"><button class="density-btn active" data-density="cozy" type="button">Cozy</button><button class="density-btn" data-density="compact" type="button">Compact</button></div>
+                  <label class="sort-wrap">
+                     Sort by 
+                     <select aria-label="Sort products" class="sort-select" id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A–Z</option>
+                        <option value="name-desc">Name: Z–A</option>
+                     </select>
+                  </label>
+               </div>
+            </div>
+            <div class="products-grid" id="productsGrid">
+               <article class="product-card" data-name="ruby red matte lipstick" data-price="24.99">
+                  <figure class="product-media"><img alt="Ruby Red Matte Lipstick" src="images/redlipstick.png"/></figure>
+                  <h3 class="product-name">Ruby Red Satin Finish Lipstick</h3>
+                  <p class="product-price">$24.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+               <article class="product-card" data-name="golden hour palette" data-price="42.99">
+                  <figure class="product-media"><img alt="Golden Hour Palette" src="images/goldenhour.png"/></figure>
+                  <h3 class="product-name">Colourpop Golden Hour Palette</h3>
+                  <p class="product-price">$42.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+
+               <article class="product-card" data-name="hydrating face serum" data-price="34.99">
+                 <figure class="product-media"><img alt="Hydrating Face Serum - Byoma" src="images/hydratingserum.jpg"/></figure>
+                  <h3 class="product-name">Byoma Hydrating Face Serum</h3>
+                  <p class="product-price">$34.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+
+               <article class="product-card" data-name="rose petal gloss" data-price="18.99">
+                 <figure class="product-media"><img alt="Gisou Lip Oil Gloss" src="images/gisoulipoil.jpg"/></figure>
+                  <h3 class="product-name">Gisou Lip Oil Gloss</h3>
+                  <p class="product-price">$18.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+
+               <article class="product-card" data-name="smokey dreams palette" data-price="39.99">
+                  <figure class="product-media"><img alt="Smokey Dreams Palette" src="images/smokeydreams.jpg"/></figure>
+                  <h3 class="product-name">Smokey Dreams Palette</h3>
+                  <p class="product-price">$39.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+               <article class="product-card" data-name="vitamin c brightening cream" data-price="29.99">
+                  <figure class="product-media"><img alt="Golden Hour Palette" src="images/vitaminc.png"/></figure>
+                  <h3 class="product-name">Fourth Ray Vitamin C Brightening Cream</h3>
+                  <p class="product-price">$29.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+               <article class="product-card" data-name="nude elegance lipstick" data-price="22.99">
+                 <figure class="product-media"><img alt="Nude Charlotte Tilbury Lipstick" src="images/nudelipstick.jpg"/></figure>
+                  <h3 class="product-name">Charlotte Tilbury Nude Elegance Lipstick</h3>
+                  <p class="product-price">$22.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+               <article class="product-card" data-name="bronze goddess shimmer" data-price="26.99">
+                  <figure class="product-media"><img alt="Bronze Goddess Body Shimmer Oil" src="images/bodyglowoil.jpg"/></figure>
+                  <h3 class="product-name">Bronze Goddess Shimmer Oil</h3>
+                  <p class="product-price">$26.99</p>
+                  <button class="add-to-cart">Add to Cart</button>
+               </article>
+            </div>
+         </section>
+         <!-- Gallery Section -->    
+         <section id="gallery" class="gallery-section"></section>
+            <a href="#gallery"></a>
+            <div class="gallery-header">
+               <h2>Our Collection Gallery</h2>
+               <p>Explore the beauty of Supernatural Cosmetics</p>
+            </div>
+            <!-- Album Navigation (Hidden without JS) -->
+            <div class="album-nav" id="albumNav" style="display: none;">
+               <button class="album-carousel-btn album-prev-btn" id="albumPrevBtn">❮</button>
+               <div class="album-buttons-container">
+                  <button class="album-btn active" data-album="lipsticks">Lipsticks</button>
+                  <button class="album-btn" data-album="eyeshadows">Eyeshadows</button>
+                  <button class="album-btn" data-album="skincare">Skincare</button>
+               </div>
+               <button class="album-carousel-btn album-next-btn" id="albumNextBtn">❯</button>
+            </div>
+            <!-- Gallery Container -->
+
+            <div class="gallery-container">
+               <!-- Lipsticks Album -->
+               <div class="album" data-album="lipsticks" id="lipsticks-album">
+                  <h3 class="album-title">Lipstick Collection</h3>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 1</p>
+                        <img src = 'images/rubyredlipstick.png' alt = 'Ruby Red Matte Lipstick'/>
+                         <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                     </div>
+                     <p class="caption">Ruby Red Matte - Our signature bold red lipstick</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 2</p>
+                       <img src = 'images/roselipstick.png' alt = 'Rose-Colored Lipstick'/>
+                        <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                     </div>
+                     <p class="caption">Rose - Satin rose-colored perfection</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 3</p>
+                        <img src = 'images/nudelipstick.jpg' alt = 'Nude-Colored Lipstick'/>
+                     <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Nude Elegance - Natural beauty enhanced</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 4</p>
+                       <img src = 'images/corallipstick.png' alt = 'Coral-Colored Lipstick'/>
+                     <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Coral Dream - Vibrant summer shade</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 5</p>
+                          <img src = 'images/berrylipstick.png' alt = 'Berry-Colored Lipstick'/>
+                   <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                        </div>
+                     <p class="caption">Berry Burst - Deep purple sophistication</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 6</p>
+                         <img src = 'images/peachlipstick.png' alt = 'Peach-Colored Lipstick'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                        </div>
+                     <p class="caption">Peachy Keen - Soft and subtle elegance</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 7</p>
+                          <img src = 'images/crimsonlipstick.png' alt = 'Crimson-Colored Lipstick'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                        </div>
+                     <p class="caption">Crimson Kiss - Classic romance</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 8</p>
+                        <img src = 'images/mauvelipstick.png' alt = 'Muave-Colored Lipstick'/>
+                     <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Mauve Magic - Trendy and modern</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 9</p>
+                       <img src = 'images/pinklipstick.png' alt = 'Pink-Colored Lipstick'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Pink Perfection - Sweet and playful</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Lipstick 10</p>
+                        <img src = 'images/plumlipstick.png' alt = 'Plum-Colored Lipstick'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button> 
+                    </div>
+                     <p class="caption">Plum Paradise - Rich and luxurious</p>
+                  </div>
+               </div>
+               <!-- Eyeshadows Album -->
+               <div class="album" data-album="eyeshadows" id="eyeshadows-album">
+                  <h3 class="album-title">Eyeshadow Palettes</h3>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 1</p>
+                        <img src = 'images/golden-hour-eyeshadow.jpg' alt = 'Golden-themed Eyeshadow Palette'/>
+                   <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Golden Hour Palette - Warm sunset shades</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 2</p>
+                        <img src = 'images/smokeydreams.jpg' alt = 'Smokey-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Smokey Dreams - Perfect evening look</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 3</p>
+                        <img src = 'images/roseeyeshadowpalette.png' alt = 'Rose-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Rose Garden - Romantic pink tones</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 4</p>
+                        <img src = 'images/oceaneyeshadowpalette.png' alt = 'Ocean-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Ocean Blues - Cool aquatic shades</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 5</p>
+                        <img src = 'images/nudeeyeshadowpalette.png' alt = 'Nude-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Nude Essentials - Everyday neutrals</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 6</p>
+                        <img src = 'images/purpleeyeshadowpalette.png' alt = 'Purple-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Purple Passion - Bold and dramatic</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 7</p>
+                        <img src = 'images/bronzeeyshadowpalette.png' alt = 'Bronze-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Bronze Goddess - Metallic shimmer</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 8</p>
+                        <img src = 'images/summereyeshadowpalette.png' alt = 'Summer-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Summer Vibes - Vibrant summer colors</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 9</p>
+                        <img src = 'images/emeraldeyeshadowpalette.png' alt = 'Green-themed Eyeshadow Palette'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Emerald Glow - Green earth tones</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Eyeshadow 10</p>
+                        <img src = 'images/silvereyeshadowpalette.png' alt = 'Silver-themed Eyeshadow Palette'/>
+                   <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Silver Lining - Cool metallic finish</p>
+                  </div>
+               </div>
+               <!-- Skincare Album -->
+               <div class="album" data-album="skincare" id="skincare-album">
+                  <h3 class="album-title">Skincare Essentials</h3>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 1</p>
+                        <img src = 'images/byomahydratingserum.png' alt = 'Byoma Hydrating Serum'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Hydrating Serum - Deep moisture boost by Byoma</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 2</p>
+                        <img src = 'images/vitamincserum.png' alt = 'Vitamin C Serum'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Vitamin C Brightening Serum - Raydiant complexion - Fourth Ray Beauty</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 3</p>
+                        <img src = 'images/cleanser.png' alt = 'Gentle Cleanser'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption"> Byoma Gentle Cleanser - Fresh and clean skin</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 4</p>
+                        <img src = 'images/nightcream.png' alt = 'Night Cream'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Peach & Lily Night Cream - Overnight renewal</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 5</p>
+                        <img src = 'images/eyecream.png' alt = 'Eye Cream'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Fenty Skin Eye Cream - Reduce dark circles</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 6</p>
+                        <img src = 'images/spfmoisturizer.png' alt = 'SPF Moisturizer'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Fenty Skin SPF Moisturizer - Daily sun protection</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 7</p>
+                        <img src = 'images/toner.png' alt = 'Balancing Toner'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption"> Glow Recipe Toner - Balance and refresh</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 8</p>
+                        <img src = 'images/scrub.png' alt = 'Exfoliating Scrub'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Exfoliating Scrub - Smooth texture</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 9</p>
+                        <img src = 'images/facemaskset.png' alt = 'Face Mask Set'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                        
+                    </div>
+                     <p class="caption">Face Mask Set - Weekly treatment</p>
+                  </div>
+                  <div class="slide">
+                     <div class="image-placeholder">
+                        <p>Skincare 10</p>
+                        <img src = 'images/antiagingserum.png' alt = 'Anti-Aging Serum'/>
+                    <button type="button" class="add-to-cart gallery-add-to-cart">
+                         Add to Cart
+                        </button>
+                    </div>
+                     <p class="caption">Laneige Anti-Aging Serum - Youthful glow</p>
+                  </div>
+               </div>
+               <!-- Slideshow Controls (Hidden without JS) -->
+               <div class="slideshow-controls" id="slideshowControls" style="display: none;">
+                  <button class="prev-btn" id="prevBtn">❮</button>
+                  <button class="next-btn" id="nextBtn">❯</button>
+                  <div class="slide-caption" id="slideCaption"></div>
+                  <div class="slide-indicators" id="slideIndicators"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- Contact Us -->
+      <section class="contact-section" id="contact">
+         <a href="#contact"></a>
+         <h2 class="section-title">Contact Us</h2>
+         <div class="contact-grid">
+            <!-- Form -->
+            <form action="#" class="contact-form" id="contactForm" method="post" novalidate="">
+               <div class="form-row">
+                  <div class="form-field">
+                     <label for="name">Name<span aria-hidden="true" class="req">*</span></label>
+                     <input id="name" name="name" placeholder="Your full name" required="" type="text"/>
+                  </div>
+                  <div class="form-field">
+                     <label for="email">Email<span aria-hidden="true" class="req">*</span></label>
+                     <input id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+                  </div>
+               </div>
+               <div class="form-field">
+                  <label for="subject">Subject</label>
+                  <input id="subject" name="subject" placeholder="How can we help?" type="text"/>
+               </div>
+               <div class="form-field">
+                  <label for="message">Message<span aria-hidden="true" class="req">*</span></label>
+                  <textarea id="message" name="message" placeholder="Write your message..." required="" rows="6"></textarea>
+               </div>
+               <button class="btn-primary" type="submit">Send Message</button>
+               <p class="form-note">We usually respond within 1-2 business days.</p>
+            </form>
+            <!-- Contact details -->
+            <aside class="contact-details">
+               <div class="contact-card">
+                  <h3>Customer Care</h3>
+                  <p>Email: <a href="mailto:support@supernaturalcosmetics.com">support@supernaturalcosmetics.com</a></p>
+                  <p>Hours: Mon-Fri, 9am-5pm (PT)</p>
+               </div>
+               <div class="contact-card">
+                  <h3>Head Office</h3>
+                  <p>Supernatural Cosmetics HQ</p>
+                  <p>123 Empire Ave, Suite 100</p>
+                  <p>Sacramento, CA 95816</p>
+               </div>
+               <div class="contact-card">
+                  <h3>Social</h3>
+                  <p><a href="https://www.instagram.com">Instagram</a> • <a href="https://www.tiktok.com">TikTok</a> • <a href="https://www.pinterest.com">Pinterest</a></p>
+               </div>
+            </aside>
+         </div>
+      </section>
+      <section>
+         <!-- Footer -->
+         <footer>
+            <div class="footer-content">
+               <p>© 2025 Supernatural Cosmetics. All rights reserved. - Harjot Kaur Saini</p>
+               <p>"This fictitious website was created as an academic exercise for the Diablo Valley College course, ARTDM-173:Web Design II. In no way should this content be considered or used as a source of factual public information."</p>
+            </div>
+         </footer>
+         <script src="script.js"></script>
+      </section>
+   </body>
+</html>
