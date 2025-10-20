@@ -1,8 +1,7 @@
 /* ==========================================
-   KAUR COSMETICS - JAVASCRIPT
-   Progressive enhancement with autoplay slideshow
-   Author: Student Name
-   Date: 2024
+   SUPERNATURAL COSMETICS - JAVASCRIPT
+   Author: Harjot Kaur Saini
+   Date: 2025
    ========================================== */
 
 // Wait for DOM to be fully loaded before executing scripts
@@ -701,3 +700,4 @@ document.addEventListener('click', function (e) {
   });
 })();
 /* End of script.js */
+
